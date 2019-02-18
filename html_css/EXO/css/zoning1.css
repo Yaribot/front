@@ -1,0 +1,111 @@
+body{
+  background: lavender;
+}
+#conteneur{
+    width: 960px;
+    background: paleturquoise;
+    color: white;
+    margin: 0 auto;
+}
+
+header {
+    background: tan;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+nav {
+    background: darkslategray;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+section{
+    height: 500px;
+    background: gray;
+    margin: 10px;
+}
+
+.rectangle1, .rectangle2, .rectangle3,.rectangle4 {
+    border: 1px solid;
+    float: left;
+    /* display: inline-block */
+    height: 248px;
+    width: 468px;
+  }
+
+    .rec1, .rec2, .rec3, .rec4{
+      border: 1px solid;
+      float: left;
+       /*display: inline-block */
+      height: 122px;
+      line-height: 122px;
+      text-align: center;
+      width: 232px;
+
+    }
+
+.rec5, .rec6, .rec7,
+.rec8, .rec9, .rec10, .rec11, .rec12,
+ {
+    border: 1px solid;
+    float: left;
+     /*display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+}
+
+.rec5, .rec6, .rec7,
+.rec8{
+    border: 1px solid;
+    float: left;
+     /*display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+}
+.rec9, .rec10, .rec11, .rec12{
+    border: 1px solid;
+    float: left;
+     /*display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+}
+ .rec13, .rec14, .rec15, .rec16 {
+    border: 1px solid;
+    float: left;
+    /* display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+}
+
+.rectangle1{
+    background: peachpuff;
+}
+
+.rectangle2{
+    background: #7a9eb1;
+}
+
+.rectangle3{
+    background: #415865;
+}
+
+.rectangle4{
+    background: #ffe1b3;
+}
+footer {
+    background: silver;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+*{
+  font-family:fantasy;
+}
+body{
+  width: 80%;
+  margin: auto;
+}
+table{
+  border: 5px solid #78909c;
+  border-collapse: collapse;
+  width: 85%;
+  margin: 45px;
+}
+thead{
+  background-color: white;
+}
+tfoot{
+  background-color: white;
+  border: 4px  #78909c;
+
+}
+tbody{
+border:2px solid #78909c;
+}
+th{
+  padding: 5px;
+  background-color: #78909c;
+  width: 10%;
+  text-align: left;
+}
+td{
+  font-size: 100%;
+  border:1px dotted #78909c;
+  text-align: left;
+  padding: 6px;
+}
+th:first-child, th:nth-child(2){
+  border:0;
+  font-size: 100%;
+  padding: 6px;
+}

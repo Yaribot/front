@@ -1,0 +1,30 @@
+/*body{
+    background-color: pink;
+}*/
+section{
+    width: 60%;
+    margin: 0 auto;
+}
+td{
+    width: 4em;
+    height: 4em;
+    /*border: 1px solid black;*/
+}
+/*table{
+    border-collapse: collapse;
+}*/
+.yellow{
+    background-color: yellow;
+}
+.black{
+    background-color: black;
+}
+.gray{
+    background-color: gray;
+}
+.white{
+    background-color: white;
+}
+.blue{
+    background-color: blue;
+}

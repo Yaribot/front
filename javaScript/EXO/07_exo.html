@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo 07</title>
+    <script src="js/07_exo.js"></script>
+</head>
+
+<body>
+    <h1>Ajouts d'éléments</h1>
+
+    <div id="exercice">
+        <ol>
+            <li>Télécharger le fichier <a href="exo9vide.html">exo9vide.html</a>.</li>
+            <li>Sélectionner la liste d'identifiant "listecommissions".</li>
+            <li>Créer un nouvel item de liste et lui affecter un texte.</li>
+            <li>Ajouter ce nouvel élément de liste à la liste</li>
+        </ol>
+
+        <p>Modifier le code en ajoutant un champ de saisie de texte et un bouton de validation. Le texte ajouté à la
+            liste devra être saisi dans le champ de... saisie.</p>
+    </div>
+
+    <input type="text" id="course"><input type="button" value="OK" onclick="ajoutBouton()">
+    <ul id="listecommissions" onclick="ajout()">
+        <li>1kg de farine</li>
+        <li>un pack de lait</li>
+    </ul>
+</body>
+
+</html>

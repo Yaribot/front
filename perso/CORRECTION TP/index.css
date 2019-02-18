@@ -1,0 +1,75 @@
+body {
+    background-color: #9FC5B6;
+}
+
+.container {
+    background: bisque;
+    height: 150vh;
+    width: 50vw;
+    margin: auto;
+}
+
+header {
+    background: url("img/woddPlank.jpg");
+    height: 41vh;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+img {
+    height: 18vh;
+    margin: auto;
+    position: relative;
+    left: 19vw;
+    top: 5vh;
+}
+
+main {
+    background: blue;
+    height: 100vh;
+}
+
+section {
+    border: 1px solid black;
+    height: 25vh;
+
+}
+
+.G {
+    background: yellow;
+    height: 100%;
+    float: left;
+    width: 30%;
+}
+
+#left {
+    background: green;
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+
+.D {
+    background: brown;
+    height: 100%;
+    width: 70%;
+    float: right;
+}
+
+#right {
+    background: yellowgreen;
+    height: 100%;
+    float: right;
+    width: 30%;
+}
+
+footer {}
+
+.clear {
+    clear: both;
+}
