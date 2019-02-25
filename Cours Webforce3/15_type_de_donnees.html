@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var maVariable = 10;
+        console.log(typeof maVariable);
+
+        // isNaN : is Not a Number
+        console.log(isNaN(100)); // renvoie false
+        console.log(isNaN("100"));  // ici la chaine 100 est convertie en number par le navigateur avent d'être testée, renvoie false
+        console.log(isNaN("abc100")); // revoie true
+
+
+        var monTexte = 'Solei';
+        console.log(typeof monTexte);
+
+        var monBooleen = true;
+        console.log(typeof monBooleen);
+
+        var maListe = ['pommes', 'poires', 'bananes', 20]
+        console.log(typeof maListe);
+
+        // structure du teest if
+        // en français simple
+       /* SI (une condition est vraie ou fausse){
+            ALORS
+            FAIS UNE CHOSE;
+            FAIS UNE AUTRE CHOSE;
+        }
+        SI (il fait beau){
+            ALORS
+            JE SORS
+        }
+
+        // en pseudo code algorithmique
+        SI (condition){
+            ALORS
+            INSTRUCTION 1;
+            INSTRUCTION 2; 
+        }
+        */
+        
+        // si le nom du constructeur est égael à array 
+        // ALORS
+        // affiche en console la chaine de caractères 'array'
+        if (maListe.constructor.name == 'Array'){
+            console.log('Array');
+        }
+        // Array veut dire tableau de données en français
+    
+    
+    </script>
+</body>
+</html>
