@@ -1,13 +1,58 @@
-
+#nav{
+    background: navy;
+    height: 5vh;
+}
 /* HEADER */
 #header{
-    background: navy;
-    height: 10vh;
+    background-image:url(../img/background.jpg); 
+    height: 15vh;
 }
 /* MAIN */
 .slide{
     background: #000;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes AutoSlide{
+    0%, 10%, 100% {
+        left: 0px;
+    }
+    20%, 30% {
+        left: -150px;
+    }
+    40%, 50% {
+        left: -300px;
+    }
+    60%, 70% {
+        left: -450px;
+    }
+    80%, 90% {
+        left: -600px;
+    }
+}
+#sContent{
     height: 10vh;
+    width: 10vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    animation-name: AutoSlide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    display: inline; 
+
+}
+#sContent li{
+    display: inline;
+
+}
+#sContent li img{
+    height: 10vh;
+    width: 10vw
 }
 .form{
     background: bisque;
