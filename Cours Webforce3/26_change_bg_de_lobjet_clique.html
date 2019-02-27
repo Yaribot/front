@@ -25,7 +25,7 @@
     }
 
      function changeBg(e){
-        e.target.style.backgroundColor = 'hsla(' + random(360) + ', 31, 100%, 50%, 1)';
+        e.target.style.backgroundColor = 'hsla(' + random(360) + ', 100%, 50%, 1)';
         // document.body.style.backgroundColor = 'hsla('+ random(360)+',31, 100%, 50%, 1);';
     }
         btn.addEventListener('click', changeBg);    
@@ -34,7 +34,8 @@
         function random(number) {
                 // Math.floor convertit en nombre entier 
                 return Math.floor(Math.random() * number);
-            // ici on convertit en nombre entier (sans virgule) le nombre randomisé et miltiplié par la valeur number (qui est l'argument donné en entrée de la fonction)   
+            // ici on convertit en nombre entier (sans virgule) le nombre randomisé et miltiplié par la valeur number (qui est l'argument donné en entrée de la fonction) 
+        }
 
     </script>
 </body>

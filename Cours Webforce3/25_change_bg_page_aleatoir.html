@@ -16,7 +16,7 @@
     // cette fonction doit être déclanchée lors du clic sur le bouton
      var btn = document.querySelector('button');
     
-    function random(number) {
+    function random(number){
             // Math.floor convertit en nombre entier 
             return Math.floor(Math.random() * number);
             // ici on convertit en nombre entier (sans virgule) le nombre randomisé et miltiplié par la valeur number (qui est l'argument donné en entrée de la fonction)
@@ -24,7 +24,7 @@
 
      function changeBg(){
         //  alert('OK !')
-        document.body.style.backgroundColor = 'hsla('+ random(360)+',31, 100%, 50%, 1);';
+        document.body.style.backgroundColor = 'hsla(' + random(360) + ',100%, 50%, 1)';
     }
         btn.addEventListener('click', changeBg);    
 

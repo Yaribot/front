@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .msgBox{
+            background-color: silver;
+            width: 242px;
+            height: 242px; /* temporaire tant qu'on a pas de contenu dans la boite */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .msgBox p{
+            background-color: pink;
+            padding: 10px 20px;
+        }
+        .msgBox button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- On retire la div car on va la générer dynamiquement en javascript
+    <div class="msgBox">
+        <p>Message</p>
+        <button>X</button>
+    </div>
+    -->
+    <button id="btnAfficheDialog">Affiche la boite de dialogue</button>
+
+    <script>
+        var btnOpenBox = document.getElementById('btnAfficheDialog');
+
+        function afficheMessage(){
+            // Dans une variable nommée body on séléctionne la balise html dans le DOM
+            var body = document.querySelector('body');
+            //  Dans une variable boiteDialogue on créé un objet div avec la méthode createElement()
+            var boiteDialog = document.createElement('div');
+            //  Ajouter à cette, boiteDialogue l'attribut class="msgBox" avec la méthode setAttribut('nomdel'attribut', nouvellevaleur)
+            /*  Les 2 paramètres attendus par setAttribute
+            1/ nom de l'attribut : on mettra class
+            2/nouvelle valeur : on mettra msgBox
+            */
+            boiteDialog.setAttribute('class', 'msgBox');
+            body.appendChild(boiteDialog);
+
+            // créer une variable pMessage qui crée un objet paragraphe (p)
+            var pMessage = document.createElement('p');
+            // Ajouter à cet objet pMessage le contenu texte suivant : 'je suis une boite de dialogue' avec la méthode texrContent
+            pMessage.textContent = 'je suis une boite de dialogue';
+            // Ajoute ce pMessage comme enfant de la boiteDialog
+            boiteDialog.appendChild(pMessage);
+
+            // Crée une variable closeBtn qui contient un nouvel objet virtuel button
+            var closeBtn = document.createElement('button')
+            // Ajouter à ce nouvel objet le contenu text x 
+            closeBtn.textContent = 'X';
+            // Donner à l'objet boiteDialog un nouvel cet enfant closeBtn 
+            boiteDialog.appendChild(closeBtn);
+
+            closeBtn.addEventListener('click', function(){
+                boiteDialog.parentNode.removeChild(boiteDialog);
+            })
+
+        } // FIN DE LA FONCTION AFFICHEMESSAGE
+        
+        // Ajouter à btnOpenBox un eventListener qui, au clic, déclanche la fonction afficheMessage
+
+        btnOpenBox.addEventListener('click', afficheMessage);
+    
+    </script>
+</body>
+</html>
