@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,16 +7,20 @@
     <title>Document</title>
     <style>
         .msgBox{
-            background-color: silver;
+            background-color: rosybrown;
             width: 242px;
             /* height: 242px; temporaire tant qu'on a pas de contenu dans la boite */
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            background-image: url('images/warning.png');
+            background-repeat: no-repeat;
+
+
         }
         .msgBox p{
-            background-color: pink;
+            /* background-color: pink; */
             padding: 10px 20px;
         }
         .msgBox button{
@@ -24,6 +28,7 @@
             top: 0;
             right: 0;
         }
+        
     
     </style>
 </head>
@@ -37,6 +42,38 @@
     <button id="btnAfficheDialog">Affiche la boite de dialogue</button>
 
     <script>
+        /*
+        Si le msgType à la valeur 'warning', alors l'icone warning sera affichée comme background-image deu msg, et le panel prendra la couleur d'arrière plan rouge. Sinon le msgType à la valeur 'chat', alors l'icone de chat sera affichée et le panel prendra la couleur d'arrière plan bleu turquoise si le paramètre msgType n'a pas de valeur du tout, alors le paragraphe prendra un padding par défaut et il n'y aura ni icone ni couleur d'arrière plan
+        */
+         // 1ère étape: construisez les IF avec les instructions suivantes:
+
+                // SI(le msgType a la valeur 'warning')
+
+                // ALORS
+
+                // on affiche alert("ATTENTION')
+
+                // Sinon si (le msgType à la valeur de 'chat)
+
+                // ALORS
+
+                // on affiche alert ('chat')
+
+                // SINON
+
+                // on affiche alert('chat')
+
+                // Sinon 
+
+                // on affiche alert('rien')
+        
+
+        // 1ere étape : pour tester le paramètre msgType
+
+        if (msgType)
+
+
+
         var btnOpenBox = document.getElementById('btnAfficheDialog');
 
         function afficheMessage(){
@@ -55,7 +92,7 @@
             // créer une variable pMessage qui crée un objet paragraphe (p)
             var pMessage = document.createElement('p');
             // Ajouter à cet objet pMessage le contenu texte suivant : 'je suis une boite de dialogue' avec la méthode texrContent
-            pMessage.textContent = 'je suis une boite de dialogue';
+            pMessage.textContent = 'Attention ta boite mail est pleine';
             // Ajoute ce pMessage comme enfant de la boiteDialog
             boiteDialog.appendChild(pMessage);
 
@@ -68,6 +105,8 @@
 
             closeBtn.addEventListener('click', function(){
                 boiteDialog.parentNode.removeChild(boiteDialog);
+            
+            
             })
 
         } // FIN DE LA FONCTION AFFICHEMESSAGE

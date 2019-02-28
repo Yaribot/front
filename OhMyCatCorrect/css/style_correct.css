@@ -1,0 +1,61 @@
+.container-fluid{
+    padding: 0 0;
+}
+
+header{
+    background:url(../img/background.jpg);
+    height: 10rem;
+}
+
+header nav{
+    background: #061339;
+    height: 2rem;
+}
+header nav a{
+    color: white;
+}
+header h1{
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+.form-group button{
+    margin-top: .7rem;
+}
+#slider{
+    background: green;
+    height: 27rem;
+}
+
+
+#form{
+    background: purple;
+    height: 17rem;
+}
+#txt{
+    background: #7885A5;
+    height: 19rem;
+}
+
+#cat{
+    background: #7885A5;
+    height: 19rem;
+}
+#cat img{
+    background: #7885A5;
+    width: 100%;
+    margin-top: 2rem;
+}
+#cat img:hover{
+    background: #061339;
+}
+
+footer{
+    background: #061339;
+    height: 2rem;
+}
+footer span{
+    color: white;
+    display: flex;
+    justify-content: end;
+}
