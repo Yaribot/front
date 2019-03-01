@@ -14,6 +14,6 @@ Couleurs :
 
     footer : #061339
 
-    tête chat défaut : #7885A5
+    tï¿½te chat dï¿½faut : #7885A5
 
-    tête chat hover : #061339
+    tï¿½te chat hover : #061339

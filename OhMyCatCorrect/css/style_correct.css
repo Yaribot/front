@@ -14,31 +14,53 @@ header nav{
 header nav a{
     color: white;
 }
-header h1{
+h1{
     text-align: center;
     color: white;
     padding: 2rem;
+    font-family: 'Merienda', cursive;
+    
+}
+header a{
+    font-family: 'Merienda', cursive;
+
 }
 .form-group button{
     margin-top: .7rem;
 }
 #slider{
-    background: green;
-    height: 27rem;
+    /* background: green; */
+    height: 27.5rem;
 }
 
 
 #form{
-    background: purple;
+    /* background: purple; */
     height: 17rem;
 }
+#formSlide{
+    background: whitesmoke;
+}
+
+h2{
+    font-family: 'Merienda', cursive;
+    color: rgb(35, 48, 82)
+}
+h3{
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+    color: rgb(35, 48, 82);
+}
 #txt{
-    background: #7885A5;
+    /* background: #7885A5; */
     height: 19rem;
+}
+#logo{
+    background: gainsboro;
 }
 
 #cat{
-    background: #7885A5;
+    /* background: #7885A5; */
     height: 19rem;
 }
 #cat img{

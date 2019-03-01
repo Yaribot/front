@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        body{
+            background: green;
+        }
         .msgBox{
             background-color: silver;
             width: 242px;
@@ -39,7 +42,7 @@
     <script>
         var btnOpenBox = document.getElementById('btnAfficheDialog');
 
-        function afficheMessage(){
+        function afficheMessage(msgText){
             // Dans une variable nommée body on séléctionne la balise html dans le DOM
             var body = document.querySelector('body');
             //  Dans une variable boiteDialogue on créé un objet div avec la méthode createElement()
@@ -55,7 +58,7 @@
             // créer une variable pMessage qui crée un objet paragraphe (p)
             var pMessage = document.createElement('p');
             // Ajouter à cet objet pMessage le contenu texte suivant : 'je suis une boite de dialogue' avec la méthode texrContent
-            pMessage.textContent = 'je suis une boite de dialogue';
+            pMessage.textContent = msgText;
             // Ajoute ce pMessage comme enfant de la boiteDialog
             boiteDialog.appendChild(pMessage);
 
@@ -66,6 +69,7 @@
             // Donner à l'objet boiteDialog un nouvel cet enfant closeBtn 
             boiteDialog.appendChild(closeBtn);
 
+             
             closeBtn.addEventListener('click', function(){
                 // au click sur le boutton X fermeture de la boite de dialogue
                 boiteDialog.parentNode.removeChild(boiteDialog);
@@ -74,8 +78,22 @@
         } // FIN DE LA FONCTION AFFICHEMESSAGE
         
         // Ajouter à btnOpenBox un eventListener qui, au clic, déclanche la fonction afficheMessage
+        // Ici les parenthèses qui suivent afficheMessage déclanche immédiatement la fonction sans attendre le click
+                // pour éviter ça on va faire une 2eme versuion ci dessous
+        // btnOpenBox.addEventListener('click', afficheMessage('Le nouveau texte de la boite'));
 
-        btnOpenBox.addEventListener('click', afficheMessage);
+
+        // Version 2 de l'appel de fonction avec paramètres
+        // Si nous voulons spécifier des paramètres pour la fonction que nous appelons (ici, la fonction afficheMessage), alors nous ne pouvons pas l'invoquer directement - nous avons besoin de la mettre à l'intérieur d'une fonction anonyme (elle n'est pas dans la portée immédiate et n'est donc pas appelé immédiatement). 
+        // Maintenant, elle ne sera pas appelée tant que le bouton n'est pas cliqué
+
+        btnOpenBox.addEventListener('click', function(){
+            afficheMessage('Le nouveau texte de la boite');
+        })
+
+         
+
+         
     
     </script>
 </body>
