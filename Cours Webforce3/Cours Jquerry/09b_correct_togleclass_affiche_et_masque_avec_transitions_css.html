@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .listeFruits{
+        transform: scale(0); /* ici on cache la liste au chargement de la page,on va l'afficher en cliquant sur le bouton */ 
+        transform-origin: 0 0;
+        background-color: firebrick;
+        transition: 1s;
+        /* pour classer la liste au dessus de la boite bleue */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 60%;
+    }
+    .affiche{
+        transform: scale(1);
+    }
+    #boiteBleue{
+        width: 600px;
+        height: 600px;
+        background: navy;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        1/ dans le HTML : ajouter un div qui à l'ID boiteBleue
+     -->
+     
+    <button class="btn">Bouton affiche liste</button>
+
+    <div id='boiteBleue'></div>
+
+    <ul class="listeFruits">
+        <li>Pastèque</li>
+        <li>Melon</li>
+        <li>Mangue</li>
+        <li>Prune</li>
+    </ul>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('JQuery est bien chargé');
+
+            // ici on ajoute un événement click sur lélément qui a la classe .btn et on éxécute une fonction anonyme
+            $('.btn').on('click', function(){
+
+                // on ajoute un toggleClass pour ajouter et suprimer la class affiche sur l'objet qui a la class .listeFruits
+
+                $('.listeFruits').toggleClass('affiche');
+            })
+        })
+    </script>
+</body>
+</html>

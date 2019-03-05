@@ -50,10 +50,52 @@
 
     
         <script src="chemin relatif vers notre fichier jquery.js"></script>
-
+    <br>
+    Si notre librairie JQuery se trouve dans le dossier js, le chemin relatif sera le suivant:
+        <script src="js/jquery-3.3.1.min.js"></script>
+    Ensuite on utilise une balise script interne (ou un lien vers notre fichier javascript externe)
+    <br>
+    On crée le scope JQuery qui recevra TOUT NOTRE CODE 
+    <script>
+        $(function(){
+            // on teste si jquery est bien chargé en affichant une console.log
+            console.log('Jquery est bien chargé');
+        })
+    </script>
+    <p>
+        On teste dans la console du navigateur que le message 'jquery est bien chargé' apparait bien.
+    </p>
+        <h3>Ne jamais continuer à coder sans avoir fait avec succès ce 1er test</h3>
+        <br>
+        <h2>Sélectionner en JQuery</h2>
+        <p>Le coeur de JQuery se trouve dans la sélection déléments pour ensuite éxécuter des méthodes dessus.</p>
+        <p>
+            $(selecteur) accepte en argument tout sélecteur CSS, JQuery nous renvoie ensuite une collection d'un ou plusieurs éléments DOM enveloppés dans un objet JQuery.
+        </p>
+        <p>
+            $('div') sélectionne toutes les divs
+            $('.titre') sélectionne touts les éléments qui ont la class='titre'
+            $('#boite') sélectionne uniquement les éléments qui dispose de l'ID boite 
+        </p>
+        <p>Cette enveloppe JQuery est celle qui donne accès à toutes les fonctionnalités de JQuery</p>
+        <ul>
+            <li>Rajouter des classes</li>
+            <li>Modifier le contenu HTML</li>
+            <li>Afficher ou cacher des éléments</li>
+            <li>Les animer etc...</li>
+        </ul>
     
+    <p>Tous les éléments sélectionnés en JavaScript pur (document.getElementById, querySelector etc...) sont des éléments DOM dans une enveloppe JQuery</p>
 
+    <h3>JQuery dipose de plusieurs méthodes pour parcourir l'arbre du document (le DOM)</h3>
 
+    <ul>
+        <li>children() parcourt les enfants</li>
+        <li>find() parcours les déscendants</li>
+        <li>next() renvoie le voisin suivant</li>
+        <li>prev() renvoie le voisin précédent</li>
+        <li>parent() renvoie, parmi une liste d'éléments, celui qui se trouve à l'index fourni</li>
+    </ul>
 
 </body>
 </html>

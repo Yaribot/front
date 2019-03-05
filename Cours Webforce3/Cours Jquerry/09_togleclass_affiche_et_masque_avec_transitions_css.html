@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .listeFruits{
+        width: 300px;
+        transform: scale(0); /* ici on cache la liste au chargement de la page,on va l'afficher en cliquant sur le bouton */ 
+        transform-origin: 0 0;
+        background-color: firebrick;
+        transition: 1s;
+        /* z-index: 1; */
+        position: absolute;
+        top: 0;
+    }
+    .affiche{
+        transform: scale(1);
+    }
+    .carre{
+        width: 200px;
+        height: 200px;
+        background-color: navy;
+    }
+    </style>
+</head>
+<body>
+    <div class="carre"></div>
+    <button class="btn">Bouton affiche liste</button>
+    <ul class="listeFruits">
+        <li>Pastèque</li>
+        <li>Melon</li>
+        <li>Mangue</li>
+        <li>Prune</li>
+    </ul>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('JQuery est bien chargé');
+
+            // ici on ajoute un événement click sur lélément qui a la classe .btn et on éxécute une fonction anonyme
+            $('.btn').on('click', function(){
+
+                // on ajoute un toggleClass pour ajouter et suprimer la class affiche sur l'objet qui a la class .listeFruits
+
+                $('.listeFruits').toggleClass('affiche');
+            })
+        })
+    </script>
+</body>
+</html>
