@@ -92,7 +92,24 @@
                 $('<p>').append('Tu es un/une ' + $(':radio:checked').val()).appendTo('.info');
                 $('<p>').append('Tu es ' + $('#statut').val()).appendTo('.info');
                 $('<p>').append('Ta couleur préféré est ' + $('#violet').val()).appendTo('.info');
-                
+
+                    // affiche mes couleurs cochées par l'utilisateur
+                    // CLOSURE pour accéder aux variables locales d'une fonction
+                    function couleurs(){
+                        var couleurs = [];
+
+                        return function(){
+                            $("input[type='checkbox']:checked").each(
+                                function(){
+                                    couleurs.push(' ' + $(this).attr('id'));
+                                    console.log(couleurs);
+                                }
+                            ) // fin du each
+                            $('<p>').append('Tu as choisi les couleurs suivantes ' + couleurs).appendTo('.info');
+                        }
+                    }
+                    var ajoutCouleurs = couleurs();
+                    ajoutCouleurs();
             })
         })
     </script>
