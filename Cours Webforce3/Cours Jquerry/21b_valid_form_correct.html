@@ -1,103 +1,77 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html lang="en">
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Document</title>
+        <title>Document</title>
 
-    <!-- CSS de Bootstrap en 1er -->
+        <!-- CSS de Bootstrap en 1er -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-
-    <!-- CSS perso en 2ème après bootstrap-->
-
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 
-    <style>
-        .container {
+        <!-- CSS perso en 2ème après bootstrap-->
 
-            border: 2px red solid;
-
-        }
-    </style>
-
-</head>
-
-<body>
+        <link rel="stylesheet" href="css/style.css">
 
 
 
-    <!--source mise en forme forms bootstrap :
+        <style>
+            .container {
 
-https://hackerthemes.com/bootstrap-cheatsheet/#form__grid
+                border: 2px red solid;
 
- -->
+            }
+        </style>
 
-    <main class="container">
+    </head>
 
-        <h1 class="text-center">Contactez-nous</h1>
-
-
-
-        <form novalidate id="contact">
+    <body>
 
 
 
-            <!-- nom -->
+        <!--source mise en forme forms bootstrap :
 
-            <div class="form-group">
+    https://hackerthemes.com/bootstrap-cheatsheet/#form__grid
 
-                <label for="nom">Nom</label>
+    -->
 
+        <main class="container">
 
-
-                <input type="text" required placeholder="Saisissez votre Nom" class="form-control" id="nom">
-
-
+            <h1 class="text-center">Contactez-nous</h1>
 
 
 
-                <div class="invalid-feedback">
-
-                    Vous devez saisir votre nom.
-
-                </div>
-
-                <div class="valid-feedback">
-
-                    Validé.
-
-                </div>
-
-            </div>
+            <form novalidate id="contact">
 
 
 
-            <!-- Prénom -->
+                <!-- nom -->
 
-            <div class="form-group row">
+                <div class="form-group">
 
-                <label for="prenom" class="col-sm-2 col-form-label">Prénom</label>
+                    <label for="nom">Nom</label>
 
-                <div class="col-sm-10">
 
-                    <input type="text" required placeholder="Saisissez votre Prénom" class="form-control" id="prenom">
+
+                    <input type="text" required placeholder="Saisissez votre Nom" class="form-control" id="nom">
+
+
+
+
 
                     <div class="invalid-feedback">
 
-                        Vous devez saisir votre prénom.
+                        Vous devez saisir votre nom.
 
                     </div>
 
@@ -109,100 +83,126 @@ https://hackerthemes.com/bootstrap-cheatsheet/#form__grid
 
                 </div>
 
-            </div>
 
 
+                <!-- Prénom -->
 
+                <div class="form-group row">
 
+                    <label for="prenom" class="col-sm-2 col-form-label">Prénom</label>
 
-            <!-- Email -->
+                    <div class="col-sm-10">
 
-            <div class="form-group row">
+                        <input type="text" required placeholder="Saisissez votre Prénom" class="form-control" id="prenom">
 
-                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="invalid-feedback">
 
-                <div class="col-sm-10">
+                            Vous devez saisir votre prénom.
 
-                    <input type="email" required placeholder="Saisissez votre Email" class="form-control" id="email">
+                        </div>
 
-                    <div class="invalid-feedback">
+                        <div class="valid-feedback">
 
-                        Vérifiez votre email.
+                            Validé.
 
-                    </div>
-
-                    <div class="valid-feedback">
-
-                        Validé.
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
 
 
 
-            <!-- Tel -->
 
-            <div class="form-group row">
+                <!-- Email -->
 
-                <label for="tel" class="col-sm-2 col-form-label">Tel</label>
+                <div class="form-group row">
 
-                <div class="col-sm-10">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
 
-                    <input type="tel" required placeholder="Saisissez votre Tel" class="form-control" id="tel">
+                    <div class="col-sm-10">
 
-                    <div class="invalid-feedback">
+                        <input type="email" required placeholder="Saisissez votre Email" class="form-control" id="email">
 
-                        Vérifiez votre téléphone.
+                        <div class="invalid-feedback">
 
-                    </div>
+                            Vérifiez votre email.
 
-                    <div class="valid-feedback">
+                        </div>
 
-                        Validé.
+                        <div class="valid-feedback">
+
+                            Validé.
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+
+
+                <!-- Tel -->
+
+                <div class="form-group row">
+
+                    <label for="tel" class="col-sm-2 col-form-label">Tel</label>
+
+                    <div class="col-sm-10">
+
+                        <input type="tel" required placeholder="Saisissez votre Tel" class="form-control" id="tel">
+
+                        <div class="invalid-feedback">
+
+                            Vérifiez votre téléphone.
+
+                        </div>
+
+                        <div class="valid-feedback">
+
+                            Validé.
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
 
-            <!-- Bouton de soumission -->
+                <!-- Bouton de soumission -->
 
-            <div class="form-group">
+                <div class="form-group">
 
-                <button type="submit" class="btn btn-primary btn-block">
+                    <button type="submit" class="btn btn-primary btn-block">
 
-                    Envoyer ma demande
+                        Envoyer ma demande
 
-                </button>
+                    </button>
 
-            </div>
+                </div>
 
 
 
-        </form>
+            </form>
 
-    </main>
+        </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
-    <script src="js/valid-form.js"></script>
+        <script src="js/valid-form.js"></script>
 
-</body>
+    </body>
 
-</html>
+    </html>
