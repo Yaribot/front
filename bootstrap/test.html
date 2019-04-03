@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <style>
+  *{
+      box-sizing:border-box;
+  }
+  nav{
+      position:fixed;
+  }
+  h1{
+      text-align:center; 
+  }
+  body{
+      background-image: url("img/mountain_in_the_sky-thatgamecompany-journey_art1600_1600x900_marked.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .container{
+      background-color: rgb(228, 201, 201, 0.5);
+  }
+  #s2:target ~ .container{
+	top:-1000px;
+}
+  .r1{
+      background-image: url("img/abstract-backgrounds-design-light-desktop-imageshd-wallpaper-full-hd-wallpaper-widescreen-images-theme-full-screen-colors-colorful-art-illustration.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .r2{
+      background-image: url("img/260640.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  /*
+  .mycol{
+      border: 2px teal solid;
+  }
+  */
+  div img{
+      width: 100%;
+  }
+  .slide_inside{
+      width:10%;
+      position: relative;
+  }
+  #terra{
+    position: absolute;
+    right:-180px; top: 300px;
+  }
+  #exdeath{
+    position: absolute;
+    left:-180px; top: 300px;
+  }
+  #kuja{
+    position: absolute;
+    left:-50px; top: 100px;
+  }
+  </style>      
+    <title>Test Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#">Hidden brand</a>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        
+
+            
+        <br><h1>Test Bootstrap</h1><br>
+            
+
+        
+        <div class="row r1">
+
+            <div class="col-md-4 col-sm-3 mycol"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum deserunt nostrum eius molestias dicta, eligendi odit repellat consequuntur nihil possimus quibusdam ducimus, laboriosam, voluptatum illo excepturi. Asperiores sapiente unde expedita.</p></div>
+
+            <div class="col-md-6 col-sm-4 mycol">
+                <img src="img/img1.jpg" alt="a racoon" class="img-thumbnail">
+            </div>
+
+            <div class="col-md-2 col-sm-5 mycol"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maiores illum, doloribus, veniam saepe accusamus, animi natus exercitationem vero recusandae dolor? Doloremque consectetur aspernatur qui alias nemo vero facere dignissimos!</p></div>
+
+        </div>
+
+
+
+        <div class="row r2">
+            <div class="col-md-2 col-sm-8 mycol"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente et molestias modi perferendis autem. Voluptatibus adipisci molestiae excepturi beatae, similique aut laudantium quos eum a aliquid incidunt vitae consequuntur?</p></div>
+            <div class="col-md-3 col-sm-2 mycol"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente et molestias modi perferendis autem. Voluptatibus adipisci molestiae excepturi beatae, similique aut laudantium quos eum a aliquid incidunt vitae consequuntur?</p></div>
+            <div class="col-md-7 col-sm-2 mycol">
+                <img src="img/img3.jpg" alt="a fox" class="img-thumbnail">
+            </div>
+        </div>
+
+
+        <div class="slide_inside">
+            <img src="img/Dissidia_Terra.webp" alt="" id="terra">
+            <img src="img/DissidiaExdeathArtwork.PNG.webp" alt="" id="exdeath">
+            <img src="img/Kuja_Dissidia.webp" alt="" id="kuja">
+            
+        </div>
+
+
+
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

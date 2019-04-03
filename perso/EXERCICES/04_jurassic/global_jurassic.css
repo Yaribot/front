@@ -25,13 +25,13 @@ header{
 }
 
 nav{
-    border:2px green solid;
+    
 }
 .wrapper{
     width: 960px;
     max-width: 1000px;
     margin: 0 auto;
-    border: 2px red solid;
+    
     /* à remplacer par un padding de 1px si nécessaire quand on suprimera les border (fusions des marges) */
 }
 footer{
@@ -43,7 +43,7 @@ footer{
 /* contenu de header */
 
 nav{
-    border: 2px green solid;
+    
     background-color: rgba(0, 0, 0, .5);
     line-height: 5; /*c'est normal de ne pas donner d'unité*/
     width: 100%;
@@ -54,10 +54,10 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-between;
-    border: 2px orchid solid;
+    
 }
 nav li{
-    border: 2px gold solid;
+    
 }
 /* les logo et bandeaux */
 header .logo{
@@ -68,7 +68,7 @@ header .logo{
     margin-bottom: 80px;
 }
 header .bandeau{
-    border: 1px blue solid;
+    
     position: absolute;
     right:0;
     bottom: 0;
@@ -78,7 +78,7 @@ header .bandeau{
 
 main section{
     padding-top: 5rem;
-    border: 2px pink solid;
+    
     margin: 0 auto;
 }
 .presentation{
@@ -111,6 +111,6 @@ iframe{
     justify-content: space-between;
 }
 .col{
-    border: 1px green solid;
+    
     width: 50%;
 }   
