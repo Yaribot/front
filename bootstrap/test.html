@@ -29,6 +29,21 @@
   }
   #s2:target ~ .container{
 	top:-1000px;
+  }
+  #s2:target ~ .container .r1 { background-position: 50% 36%; }
+  #s2:target ~ .container .r2 { background-position: 50% 0%; }
+  #s2:target ~ .container #terra { 
+	left: -180px;
+	top: -100px;
+	transform: rotate(-7deg);
+}
+#s2:target ~ .container #kuja {
+	left: -350px;
+	top: 50px;
+	transform: rotate(0deg);
+}
+#s2:target ~ .container nav li:first-child + li a {
+	text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603;
 }
   .r1{
       background-image: url("img/abstract-backgrounds-design-light-desktop-imageshd-wallpaper-full-hd-wallpaper-widescreen-images-theme-full-screen-colors-colorful-art-illustration.jpg");
@@ -54,11 +69,13 @@
   }
   #terra{
     position: absolute;
-    right:-180px; top: 300px;
+    right: -397px; top: -139px;
+    transition: all 1.4s cubic-bezier(.49,.22,.52,1);
   }
   #exdeath{
     position: absolute;
-    left:-180px; top: 300px;
+    left: 52px; top: -66px;
+    transition: all 1.4s cubic-bezier(.49,.22,.52,1);
   }
   #kuja{
     position: absolute;
@@ -68,6 +85,10 @@
     <title>Test Bootstrap</title>
 </head>
 <body>
+
+    <span id="s1"></span>
+    <span id="s2"></span>
+    <span id="s3"></span>
 
     <div class="container">
 
@@ -79,22 +100,18 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <a class="navbar-brand" href="#">Hidden brand</a>
+                        <a class="navbar-brand" href="#">Ma nav</a>
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#s1">Splash <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#s2">Lorem Schnapsum</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                <a class="nav-link" href="#s3">Credits</a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
                     </div>
                 </nav>
             </div>
