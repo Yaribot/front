@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-image: url(../img/background.png);
+}
+.navbar-light{
+    background-color: #EB43A3 !important;
+}

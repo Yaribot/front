@@ -1,0 +1,93 @@
+/* 
+1- je fais mon zoning 
+*/
+.container-fluid {
+    /*Je règle la dimension de mon espace de stockage en css
+    background-color: red;*/
+    /* Si je veux que mon image background ne se répète pas je rajoute à la fin "...png")no-repeat;*/
+    background: url("../img/background.png");
+    height: 200vh;
+    width: 100vw;
+}
+
+nav{
+    /* Je règle la dimension de la barre de menu*/
+    background: #C55394;
+    height: 5vh;
+}
+header{
+    /* Je règle la dimension de la barre de mon Header */
+    /* background: ivory; */
+    height: 15vh;
+  
+}
+.container{
+    /* Je règle la dimension de la barre de mon <main><main>*/
+    background: #fff;
+    height: 150vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+.unicorn{
+    background: gray;
+    height: 27vh;
+}
+section h4{
+    margin-top: 0px;
+}
+.img{
+    float: left;
+}
+.img img{
+    display: flex;
+    height: 17vh;
+    margin: 32px;
+    padding: 2vh;
+}
+footer{
+     /*Je règle la dimension de la barre de mon footer*/
+    background: #E577B5;
+    height: 5vh;
+    margin-top: 26vh;
+}
+/* 
+2- J'intègre mes éléments
+*/
+/* Test */
+/* .rainbow{ */
+    /* text-align: center; */
+/* Ici je cible l'élément img qui se trouve dans ma balise header*/
+header img{ 
+    height: 200px;
+    position: relative;
+    left: 38vw;
+}
+h1{
+    font-family: 'courgette', cursive;
+    z-index: 1;
+    text-align: center;
+/* avec position relative je prend le main sur l'emplacement de l'élément que je manipule avec ses propriétés associé top,left,right*/
+    position: relative;
+    bottom: 17vh;
+}
+nav h3{
+    float: left;
+/*avec float je peux manipuler un élément sans prendre en compte son comportement normal*/
+}
+nav ul{
+
+    display: flex; 
+/*avec display flex je dispose les éléments à l'horizontal*/
+
+    float: right;
+
+    list-style: none;
+/*avec "Life-style: none" je peux enlever les puces de mes liste "ul","ol"...*/
+}
+#map{
+    float: left;
+}
+.clear{
+    clear: both;
+    /*avec "clear" j'annule la propriété "float" et les éléments reprennent leurs comprtement normale*/
+}

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="fr"> <!--Changer la langue en "fr"-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--lien vers le fichier css (stylesheet, style.css)-->
+    <!-- vérifier que les deux fichiers soient bien liés-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unicorns</title>
+</head>
+<body>
+    <!-- I- je détermine les zones de mon HTML : -->
+    <!-- a/ je déclare les balises HEADER, NAV, MAIN, FOOTER
+            code emmet => .container-fluid>nav+header+main+footer -->
+    <div class="container-fluid">
+        <!-- Avec ma classe container-fluid (je prend toute la largeur de mon écran) je vais déterminer un espace de stockage -->
+        <nav>
+            <h3>MyUnicorn</h3>
+            <!-- ul>li>a*3 -->
+            <ul>
+                <li>
+                    <a href="">Le principe</a>
+                </li>
+                <li>
+                    <a href="">Nos licornes</a>
+                </li>
+                <li>
+                    <a href="">Nous trouver</a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </nav>
+        <header>
+            
+            <img src="img/rainbow.png" alt="rainbow">
+            <h1>Un jour, une licorne</h1>
+            <!-- Test -->
+            <!-- <div class="rainbow"> -->
+            <!-- <figure> -->
+            <!-- <img src="../unicorns/img/rainbow.png" alt="rainbow"> -->
+            <!-- </figure> -->
+            <!-- </div> -->
+        </header>
+        <main class="container">
+            <!-- section*3 -->
+            <section class="unicorn">
+        <h4>Le principe</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend.
+            Ut
+            malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum.
+            Integer
+            facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed
+            lorem
+            elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo
+            leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed
+            mollis
+            sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales.
+            Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.
+
+            Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis.
+            Vestibulum
+            vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla
+            convallis mi
+            eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.
+        </p>
+            </section>
+            
+            <section class="unicorn">
+                <h4>Nos licornes</h4>
+                <div class="img">
+                    <img src="img/photo1.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="img/photo2.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="img/photo3.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="img/photo4.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+                <!-- h4+div*5 -->
+            </section>
+            
+            <section>
+                <h4>Nous trouver</h4>
+                <div id="map">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.118341124774!2d2.446713615672258!3d48.79871997928166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673347f65039b%3A0xec1fbdb3828d379a!2s115+Avenue+du+G%C3%A9n%C3%A9ral+de+Gaulle%2C+94000+Cr%C3%A9teil!5e0!3m2!1sfr!2sfr!4v1550243610777"
+                    width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h5>Notre élevage de licornes est situé au :</h5>
+                    <p>18 Rue Geoffroy l'Asnier<br />75004 Paris<br />01.23.45.67.89</p>
+                    <h5>Newsletter</h5>
+                    <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                    <form method="post" action="traitement php"></form>
+                        <label for="email"></label>
+                        <input type="text" name="email" id="email" placeholder="votre@email.fr"><br>
+                        <input type="submit" value="Valider">
+                    </form>
+
+                </div>
+                <div class="clear"></div>
+            </section>
+        </main>
+        <!-- je met la class container pour pouvoir placer la balise "<main></main>" au milieu de ma page -->
+        <footer></footer>
+    </div>
+</body>
+</html>
