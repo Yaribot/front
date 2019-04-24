@@ -1,0 +1,70 @@
+/*   
+Theme Name: Portfolio
+Theme URI: http://localhost/portfolio/wp-content/themes/portfolio
+Description: Portfolio developpeur WEB
+Author: Yannis ARIBOT
+Author URI: http://localhost/portfolio
+Version: 1.0
+*/
+
+body{
+    background-color: #f4f6f9;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.hauteur{
+    min-height: 200px;
+}
+.h-entetes{
+    min-height: 200px;
+}
+
+.ma-section{
+    min-height: 600px;
+}
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 7rem;
+}
+h3{
+    margin-top: 3rem;
+}
+p em{
+    font-family: 'Lobster', cursive;
+}
+
+.menu_header ul{
+    text-align: center;
+    display: flex !important;
+}
+
+.menu_header li{
+    margin-left: 2rem;
+}
+
+.menu_header ul li a{
+    color:white;
+    text-decoration: none !important;
+}
+
+
+
+#wysiwyg_widgets_widget-4{
+    list-style: none !important;
+}
+
+#wysiwyg_widgets_widget-3{
+    list-style: none !important;
+}
+
+#wysiwyg_widgets_widget-2{
+    list-style: none !important;
+}
+
+#wysiwyg_widgets_widget-5{
+    list-style: none !important;
+}
