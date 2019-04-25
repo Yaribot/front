@@ -8,8 +8,23 @@ Version: 1.0
 */
 
 body{
-    background-color: #f4f6f9;
+    /* background-color: #f4f6f9; */
+    /* background-image: url("acceptance_of_the_void-thatgamecompany_journey_art1600_1600x900_marked.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; */
 }
+
+.ma-section{
+    background-image: url("acceptance_of_the_void-thatgamecompany_journey_art1600_1600x900_marked.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+.container{
+    background-color: #f4f6f9;
+    box-shadow: 13px 11px 24px 0px rgba(0,0,0,0.42);
+}
+
 
 a{
     text-decoration: none !important;
@@ -29,17 +44,28 @@ a{
 h1{
     font-family: 'Luckiest Guy', cursive;
     margin-top: 7rem;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px #000000;
 }
+h2{
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 1px 3px #000000;
+}
+
 h3{
     margin-top: 3rem;
+    
 }
 p em{
     font-family: 'Lobster', cursive;
 }
 
+
+
 .menu_header ul{
     text-align: center;
     display: flex !important;
+    list-style: none !important;
 }
 
 .menu_header li{
@@ -51,7 +77,55 @@ p em{
     text-decoration: none !important;
 }
 
+.menu_2{
+    list-style: none !important;
+    margin-top: 10rem;
+}
 
+.menu_2 ul{
+    text-align: center;
+    display: flex !important;
+    list-style: none !important;
+}
+
+.menu_2 ul li a{
+    margin-left: 2rem;
+    color:black;
+    text-decoration: none !important;
+}
+
+.maps{
+    padding: 4%;
+    list-style: none !important;
+}
+
+#wysiwyg_widgets_widget-8{
+    text-decoration: none !important;
+}
+
+.copy{
+    list-style: none !important;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#wysiwyg_widgets_widget-7{
+    text-decoration: none !important;
+}
+
+.share{
+    list-style: none !important;
+    margin-top: 10rem;
+    text-align: end;
+}
+
+.logo_2{
+    list-style: none !important;
+}
+
+.btn{
+    margin-bottom: 5rem;
+}
 
 #wysiwyg_widgets_widget-4{
     list-style: none !important;
@@ -67,4 +141,11 @@ p em{
 
 #wysiwyg_widgets_widget-5{
     list-style: none !important;
+}
+
+.mes-competences3 i{
+    font-size: 70px;
+}
+footer{
+    background-color: #acc6ef;
 }

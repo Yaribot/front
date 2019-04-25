@@ -6,19 +6,19 @@
 
         <div class="d-flex">
 
-        <div class="col-md-4 bg-success hauteur">
+        <div class="col-md-4 bg-transparent hauteur">
             <?php dynamic_sidebar('bas-gauche') ?>
 
         </div>
 
 
-        <div class="col-md-4 bg-warning hauteur">
+        <div class="col-md-4 bg-transparent hauteur">
             <?php dynamic_sidebar('bas-centre') ?>
 
         </div>
 
 
-        <div class="col-md-4 bg-info hauteur">
+        <div class="col-md-4 bg-transparent hauteur">
             <?php dynamic_sidebar('bas-droit') ?>
 
         </div>
