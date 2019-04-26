@@ -20,10 +20,21 @@ body{
     background-size: 100%;
     background-size: cover;
 }
+.section-cont{
+  background: url("e2y3p.jpg");
+  background-size: cover;
+}
 .container{
     background-color: #f4f6f9;
     box-shadow: 13px 11px 24px 0px rgba(0,0,0,0.42);
 }
+.mon_container{
+    background-color:#ffd8a3;
+    box-shadow: 13px 11px 24px 0px rgba(0,0,0,0.42);
+    border-radius: 30px;
+}
+
+
 
 
 a{
