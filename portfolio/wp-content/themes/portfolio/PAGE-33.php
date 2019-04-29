@@ -1,6 +1,17 @@
 
 
-<?php get_header() ?> <!-- fonction wordpress, permet d'inclure le haut du site, je prends le header.php et je le colle ici -->
+<?php 
+if(is_page(33)): 
+
+ get_header('33');
+
+else :
+ get_header();
+
+endif;
+
+?>
+ <!-- fonction wordpress, permet d'inclure le haut du site, je prends le header.php et je le colle ici -->
 <section class="section-cont">
 NOUS SOMMES SUR LE TEMPLATE DE PAGE 33
 
@@ -26,4 +37,13 @@ NOUS SOMMES SUR LE TEMPLATE DE PAGE 33
  <?php endif; ?>
 
 
-<?php get_footer() ?> <!-- fonction wordpress, permet d'inclure le bas du site, je prends le footer.php et je le colle ici -->
+<?php 
+if(is_page(33)): 
+
+ get_footer('f_cont-33');
+
+else :
+ get_footer();
+
+endif;
+?>
