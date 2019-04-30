@@ -14,6 +14,12 @@ body{
     background-size: 100%; */
 }
 
+.container-fluid{
+    background-image: url('dragon.jpg');
+    background-size: cover;
+
+}
+
 .cont_hauteur{
     background-color:#ffd8a3;
 }
@@ -25,7 +31,7 @@ body{
 #info{
     background-image:url('art_nouveau.jpeg');
     /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    background-size: cover;
 
 }
 
@@ -47,6 +53,7 @@ body{
 .mon_container{
     background-color:#ffd8a3;
     box-shadow: 13px 11px 24px 0px rgba(0,0,0,0.42);
+    border: solid 5px white;
     border-radius: 30px;
     /* margin-bottom: 5rem; */
 }
@@ -63,6 +70,7 @@ a{
 }
 .h-entetes{
     min-height: 200px;
+    border: solid 5px white;
 }
 
 .ma-section{
@@ -74,6 +82,12 @@ h1{
     margin-top: 7rem;
     font-size: 70px;
     text-shadow: 2px 2px 5px #000000;
+}
+
+
+.solgan h1 a:hover{
+    text-decoration: none !important;
+    color: #aab2bf;
 }
 
 h2{
